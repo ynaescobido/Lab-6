@@ -1,0 +1,323 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | My Musical Hobby
+  </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar md:navbar-expand bg-1 fg-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">My Musical Hobby</a>
+
+      <button class="btn-icon navbar-toggler" type="button"
+        data-bs-toggle="drawer" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" id="navbarNav"
+        tabindex="-1" aria-labelledby="navbarNavLabel">
+        <div class="drawer-header">
+          <h2 class="drawer-title" id="navbarNavLabel">Menu</h2>
+          <button type="button" class="btn-close"
+            data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#music">My Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <h1>My Musical Hobby</h1>
+    <p>I love playing guitar, collecting vinyl records, and going
+      to concerts. These are three ways I enjoy music.</p>
+
+    <div id="musicCarousel" class="carousel carousel-overlay">
+      <div class="carousel-inner rounded-5">
+
+        <div class="carousel-item active">
+          <img src="images/guitar-banner.jpg" class="d-block w-100"
+            alt="Guitar">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/vinyl-banner.jpg" class="d-block w-100"
+            alt="Vinyl records">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/concerts-banner.jpg" class="d-block w-100"
+            alt="Live concert">
+        </div>
+
+      </div>
+
+      <div class="carousel-overlay-controls">
+        <button class="btn-icon btn-sm btn-subtle theme-secondary"
+          type="button" data-bs-target="#musicCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="btn-icon btn-sm btn-subtle theme-secondary"
+          type="button" data-bs-target="#musicCarousel"
+          data-bs-slide="next">
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <h2 id="music" class="mt-4">My Music Hobbies</h2>
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/guitar-hobby.jpg" class="card-img-top"
+            alt="Guitar">
+          <div class="card-body">
+            <h3 class="card-title">Playing Guitar</h3>
+            <p class="card-text">
+              I enjoy playing guitar and learning new songs.
+            </p>
+
+            <details class="accordion-item">
+              <summary class="accordion-header">More Details</summary>
+              <div class="accordion-body">
+                Playing guitar helps me relax and improve my music skills.
+              </div>
+            </details>
+
+            <button class="btn-solid theme-primary mt-3"
+              type="button" data-bs-toggle="dialog"
+              data-bs-target="#dialog1">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/guitar-songs.jpg" class="card-img-top"
+            alt="Guitar used to play songs">
+          <div class="card-body">
+            <h3 class="card-title">Favourite Songs to Play</h3>
+            <p class="card-text">
+              I like learning my favourite songs on guitar.
+            </p>
+
+            <details class="accordion-item">
+              <summary class="accordion-header">More Details</summary>
+              <div class="accordion-body">
+                Learning songs helps me practice chords and rhythm.
+              </div>
+            </details>
+
+            <button class="btn-solid theme-primary mt-3"
+              type="button" data-bs-toggle="dialog"
+              data-bs-target="#dialog2">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/vinyl-collection.jpg" class="card-img-top"
+            alt="Vinyl record collection">
+          <div class="card-body">
+            <h3 class="card-title">My Vinyl Collection</h3>
+            <p class="card-text">
+              I enjoy collecting vinyl records.
+            </p>
+
+            <details class="accordion-item">
+              <summary class="accordion-header">More Details</summary>
+              <div class="accordion-body">
+                I like looking at album covers and listening to records.
+              </div>
+            </details>
+
+            <button class="btn-solid theme-primary mt-3"
+              type="button" data-bs-toggle="dialog"
+              data-bs-target="#dialog3">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/favourite-albums.jpg" class="card-img-top"
+            alt="Vinyl album">
+          <div class="card-body">
+            <h3 class="card-title">Favourite Albums</h3>
+            <p class="card-text">
+              I have albums that I enjoy listening to repeatedly.
+            </p>
+
+            <details class="accordion-item">
+              <summary class="accordion-header">More Details</summary>
+              <div class="accordion-body">
+                My favourite albums have songs I never get tired of.
+              </div>
+            </details>
+
+            <button class="btn-solid theme-primary mt-3"
+              type="button" data-bs-toggle="dialog"
+              data-bs-target="#dialog4">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/concerts-hobby.jpg" class="card-img-top"
+            alt="Concert audience">
+          <div class="card-body">
+            <h3 class="card-title">My Love for Concerts</h3>
+            <p class="card-text">
+              I love seeing artists perform live.
+            </p>
+
+            <details class="accordion-item">
+              <summary class="accordion-header">More Details</summary>
+              <div class="accordion-body">
+                Concerts are exciting because of the music and the crowd.
+              </div>
+            </details>
+
+            <button class="btn-solid theme-primary mt-3"
+              type="button" data-bs-toggle="dialog"
+              data-bs-target="#dialog5">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="card h-100">
+          <img src="images/concert-experiences.jpg" class="card-img-top"
+            alt="Live concert performance">
+          <div class="card-body">
+            <h3 class="card-title">Favourite Concert Experiences</h3>
+            <p class="card-text">
+              Some of my favourite memories are from concerts.
+            </p>
+
+            <details class="accordion-item">
+              <summary class="accordion-header">More Details</summary>
+              <div class="accordion-body">
+                I enjoy hearing familiar songs performed live.
+              </div>
+            </details>
+
+            <button class="btn-solid theme-primary mt-3"
+              type="button" data-bs-toggle="dialog"
+              data-bs-target="#dialog6">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIX DIALOGS -->
+    <dialog class="dialog" id="dialog1" aria-labelledby="title1">
+      <div class="dialog-header">
+        <h3 id="title1">Playing Guitar</h3>
+        <button class="btn-close" type="button"
+          data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">
+        <p>I enjoy practicing guitar and learning new chords.</p>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog2" aria-labelledby="title2">
+      <div class="dialog-header">
+        <h3 id="title2">Favourite Songs to Play</h3>
+        <button class="btn-close" type="button"
+          data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">
+        <p>Playing familiar songs makes guitar practice more enjoyable.</p>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog3" aria-labelledby="title3">
+      <div class="dialog-header">
+        <h3 id="title3">My Vinyl Collection</h3>
+        <button class="btn-close" type="button"
+          data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">
+        <p>I enjoy owning physical copies of music I love.</p>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog4" aria-labelledby="title4">
+      <div class="dialog-header">
+        <h3 id="title4">Favourite Albums</h3>
+        <button class="btn-close" type="button"
+          data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">
+        <p>My favourite albums are ones I can listen to again and again.</p>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog5" aria-labelledby="title5">
+      <div class="dialog-header">
+        <h3 id="title5">My Love for Concerts</h3>
+        <button class="btn-close" type="button"
+          data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">
+        <p>I enjoy the energy and excitement of live music.</p>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="dialog6" aria-labelledby="title6">
+      <div class="dialog-header">
+        <h3 id="title6">Favourite Concert Experiences</h3>
+        <button class="btn-close" type="button"
+          data-bs-dismiss="dialog" aria-label="Close"></button>
+      </div>
+      <div class="dialog-body">
+        <p>Concerts create memories through music and performances.</p>
+      </div>
+    </dialog>
+
+  </main>
+
+  <footer class="container py-4">
+    <p>My Musical Hobby</p>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
